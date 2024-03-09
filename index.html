@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Elevate Hub Studio</title>
+
+    <script src="./js/utils/styled.js" defer></script>
   </head>
   <body>
     <header class="header-container">
@@ -21,8 +23,12 @@
           <li class="nav-link"><a href="#">Home</a></li>
           <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
           <li class="nav-link"><a href="./pages/about.html">About Us</a></li>
-          <li class="nav-link btn btn-primary btn-navigation">
-            <a href="./pages/contact.html">Get in Touch</a>
+          <li class="nav-link">
+            <a
+              class="btn btn-primary btn-navigation"
+              href="./pages/contact.html"
+              >Get in Touch</a
+            >
           </li>
         </menu>
       </nav>
@@ -33,15 +39,20 @@
     <main>
       <section id="hero">
         <div class="hero-text">
-          <h1>Hit Play on Your Story with Elevate</h1>
+          <h1>
+            Hit Play on Your <br />Story with
+            <span id="elevate-text">Elevate</span>
+          </h1>
           <p>
             Expertly Crafted Animation That Speaks to Your Audience Let's Make
             Your Message Unforgettable
           </p>
 
           <div class="hero-button-group">
-            <a class="btn btn-primary"> Animate Your Vision </a>
-            <a class="btn btn-link"> Discover Our Work </a>
+            <a class="btn btn-primary" href="#calendly">
+              Animate Your Vision
+            </a>
+            <a class="btn btn-link" href="#portfolio"> Discover Our Work </a>
           </div>
         </div>
 
@@ -55,29 +66,29 @@
       </section>
 
       <section id="problem-statement">
-        <h2>We understand the struggle.</h2>
-        <p>
-          Creating compelling marketing videos can often feel like an
-          insurmountable challenge. But it doesn't have to be this way. Do any
-          of these thoughts sound familiar?
-        </p>
         <div class="ps-content">
-          <h3>"I'm not sure where to start with video marketing."</h3>
-          <h3>
-            "Producing quality videos feels too complex and time-consuming."
-          </h3>
-          <h3>"I can't seem to capture my brand's essence in a video."</h3>
-          <h3>"How do I make videos that truly resonate with my audience?"</h3>
-          <h3>
-            "I wish there was an easier way to create engaging marketing
-            videos."
-          </h3>
+          <h2>We understand the struggle.</h2>
+          <p>
+            Creating compelling marketing videos can often feel like an
+            insurmountable challenge. But it doesn't have to be this way. Do any
+            of these thoughts sound familiar?
+          </p>
         </div>
-
-        <p>
-          At Elevate Studio, we're here to turn these concerns into a thing of
-          the past.
-        </p>
+        <div class="ps-chat">
+          <h3>I'm not sure where to start with video marketing.</h3>
+          <h3>
+            Producing quality videos feels too complex and time-consuming.
+          </h3>
+          <h3>I can't seem to capture my brand's essence in a video.</h3>
+          <h3>How do I make videos that truly resonate with my audience?</h3>
+          <h3 class="from-them">
+            I wish there was an easier way to create engaging marketing videos.
+          </h3>
+          <p class="our-reply">
+            At Elevate Hub Studio, we're here to turn these concerns into a thing of
+            the past.
+          </p>
+        </div>
       </section>
 
       <section id="solution-statement">
@@ -85,21 +96,23 @@
           <span> We Deliver Masterpieces </span>
           <span class="typing"> That Captivate </span>
         </h2>
-
-        <div class="solution-grid">
-          <div class="solution-grid-item">
-            <div class="item-icon">
-              <img src="./assets/icons/script-icon.png" alt="Icon" />
+        <div class="solution-container">
+          <div class="solution-grid">
+            <div class="solution-grid-item">
+              <div class="item-icon">
+                <img src="./assets/icons/script-icon.png" alt="Icon" />
+              </div>
+              <h3>High-Converting Scripts</h3>
+              <p>
+                Crafting narratives that resonate with your audience, our
+                high-converting scripts transform your message into a compelling
+                story that drives results.
+              </p>
             </div>
-            <h3>High-Converting Scripts</h3>
-            <p>
-              Crafting narratives that resonate with your audience, our
-              high-converting scripts transform your message into a compelling
-              story that drives results.
-            </p>
-          </div>
-          <div class="solution-grid-item">
-            <div class="item-icon">
+            <div class="solution-grid-item">
+              <div class="item-icon">
+                <img src="./assets/icons/script-icon.png" alt="Icon" />
+              </div>
               <h3>Powerful Voice-Over</h3>
               <p>
                 Our experienced voice artists infuse emotion and impact into
@@ -116,19 +129,23 @@
                 immersive viewer experience.
               </p>
             </div>
-            <div class="solution-grid-item"></div>
-            <h3>Music & SFX</h3>
-            <p>
-              Enhance the emotional tone of your video with carefully selected
-              music and sound effects, elevating the overall impact and
-              engagement.
-            </p>
+            <div class="solution-grid-item">
+              <div class="item-icon">
+                <img src="./assets/icons/script-icon.png" alt="Icon" />
+              </div>
+              <h3>Music & SFX</h3>
+              <p>
+                Enhance the emotional tone of your video with carefully selected
+                music and sound effects, elevating the overall impact and
+                engagement.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="portfolio">
-        <h2>Expect the Exceptional, Sample Our Craft</h2>
+        <h2>Expect the Exceptional, <br>Sample Our Craft</h2>
 
         <div class="portfolio-grid">
           <div class="p-grid-item">
@@ -165,9 +182,10 @@
       </section>
 
       <section id="our-process">
-        <h2>Crafting Your Story, Step by Step</h2>
+        <h2>Crafting Your Story, <br>Step by Step</h2>
         <div class="steps-container">
           <div class="step">
+            <span class="number">1</span>
             <h3>Questionnaire</h3>
             <p>
               Start by sharing your project vision and specifics through our
@@ -175,20 +193,23 @@
             </p>
           </div>
           <div class="step">
-            <h3>Scripting (3-5 Days)</h3>
+            <span class="number">2</span>
+            <h3>Scripting</h3>
             <p>
               Our writers then craft a compelling script that embodies your core
               message.
             </p>
           </div>
           <div class="step">
-            <h3>Voice-over (3-5 Days)</h3>
+            <span class="number">3</span>
+            <h3>Voice-over</h3>
             <p>
               Choose a voice that resonates, bringing your script to life with
               emotion and clarity.
             </p>
           </div>
           <div class="step">
+            <span class="number">4</span>
             <h3>Animation</h3>
             <p>
               Our animators create engaging visuals that perfectly sync with
@@ -196,6 +217,7 @@
             </p>
           </div>
           <div class="step">
+            <span class="number">5</span>
             <h3>Delivery</h3>
             <p>
               Review your bespoke animated video and request any final tweaks or
@@ -206,7 +228,7 @@
       </section>
 
       <section id="value-proposition">
-        <h2>Elevate Your Brand with Unbeatable Value</h2>
+        <h2>Elevate Your Brand <br>with Unbeatable Value</h2>
         <p>
           Join a global clientele leveraging ElevateHubMedia's animated
           explainer videos for impactful messaging and boosted conversions. We
@@ -256,7 +278,7 @@
       </section>
 
       <section id="packages">
-        <h2>Select Your Perfect Animation Package</h2>
+        <h2>Select Your Perfect <br>Animation Package</h2>
         <div class="packages-container">
           <div class="package">
             <div>
@@ -324,7 +346,7 @@
       </section>
 
       <section id="calendly">
-        <h2>Need Clarity? Book a Warm, Informal Chat with Us!</h2>
+        <h2>Need Clarity? Book a Warm, <br>Informal Chat with Us!</h2>
         <div class="calendly-widget"></div>
       </section>
 

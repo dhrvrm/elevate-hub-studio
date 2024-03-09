@@ -24,7 +24,7 @@ Website Revamp
 
 ## Todo
 - [x] Project Setup
-- [] Section Markup
+- [x] Section Markup
 - [] Assets Import
 - [] Assets Optimization
 - [] Home Page
