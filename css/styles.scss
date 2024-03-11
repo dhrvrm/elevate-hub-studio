@@ -82,6 +82,7 @@ h5 {
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+    flex-wrap: wrap;
 }
 
 @mixin para-width {
@@ -174,6 +175,13 @@ a {
     object-fit: contain;
 }
 
+.typing {
+    font-size: 6.4rem;
+    margin-bottom: 3.5rem;
+    font-weight: 800;
+    transition: color 150ms ease-in;
+    position: relative;
+}
 
 // Header
 
@@ -214,6 +222,28 @@ a {
 }
 
 // Main Content
+body {
+    background-image: url(../assets/images/hero-illustration.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: hoverEffect 5s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes hoverEffect {
+
+    0%,
+    100% {
+        background-position: center;
+    }
+
+    50% {
+        background-position: calc(50% + 200px) center;
+        /* Move 20px to the right */
+    }
+}
 
 section {
     padding-inline: $whitespace-sides;
@@ -373,10 +403,8 @@ section {
         font-size: $fs-h2;
         font-weight: 700;
         margin-bottom: 0.4em;
+        display: block;
 
-        span {
-            display: block;
-        }
     }
 
     .solution-grid {
@@ -398,11 +426,12 @@ section {
             // border: 2px ridge rgb(134, 134, 252);
             background-color: $clr-muted-400;
             cursor: pointer;
-            transition: all 300ms ease-in-out;
+            transition: all 500ms ease-in-out;
 
             &:hover {
-                transform: scaleX(1.015);
-                box-shadow: 0px 2px 2px rgba(0, 36, 53, 0.356);
+                transform: scale(1.015);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 
             }
 
@@ -465,13 +494,14 @@ section {
             @include flex-container(column, start, start);
             border: 2px solid rgba(128, 128, 128, 0.087);
             border-bottom: transparent;
+            background-color: rgba(231, 202, 239, 0.326);
+            backdrop-filter: blur(16px);
             text-align: left;
             padding: 6rem 1.2rem 2.4rem 1.2rem;
             position: relative;
             z-index: 9;
             border-top-left-radius: 2rem;
             border-top-right-radius: 2rem;
-            background: white;
             cursor: pointer;
             transition: all 600ms ease-in-out;
 
@@ -545,7 +575,8 @@ section {
         display: flex;
         justify-content: start;
         width: 50%;
-        // pointer-events: stroke;
+        // z-index: -9;
+        // pointer-events: none;
 
         canvas {
             // border: 1px solid grey;
@@ -567,6 +598,15 @@ section {
             padding: 4rem;
             width: max-content;
             background-color: $clr-muted-400;
+            cursor: pointer;
+            transition: all 500ms ease-in-out;
+
+
+            &:hover{
+                transform: scaleY(1.02);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            }
 
             &:first-child {
                 border-top-left-radius: 4rem;
@@ -645,8 +685,8 @@ section {
         menu {
             font-size: 1.4rem;
             min-height: 20rem;
-            
-            li{
+
+            li {
                 margin-bottom: 0.4rem;
             }
         }

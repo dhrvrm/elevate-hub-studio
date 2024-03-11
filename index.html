@@ -7,6 +7,8 @@
     <title>Elevate Hub Studio</title>
 
     <script src="./js/utils/styled.js" defer></script>
+    <script src="./js/vendor/typed.js" defer></script>
+    <script src="./js/app.js" defer></script>
   </head>
   <body>
     <header class="header-container">
@@ -38,6 +40,9 @@
 
       <div role="button" id="hamburger">Hamburger</div>
     </header>
+
+
+    
 
     <main>
       <section id="hero">
@@ -77,7 +82,7 @@
           <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
           <script>
             const r = new rive.Rive({
-              src: "./assets/shapes.riv",
+              src: "./assets/animated_shapes_-_loops.riv",
               canvas: document.getElementById("canvas"),
               autoplay: true,
               stateMachines: "shapes_001",
@@ -133,8 +138,8 @@
           />
         </div>
         <h2>
-          <span> We Deliver Masterpieces </span>
-          <span class="typing"> That Captivate </span>
+          <span> We Deliver Masterpieces </span> <br>
+          <span class="typing"><span class="typing-span"> that captivate</span> </span>
         </h2>
         <div class="solution-container">
           <div class="solution-grid">
