@@ -65,21 +65,22 @@
         </div>
 
         <div class="hero-display">
-          <!-- <img
-            src="./assets/images/hero.png"
-            alt="Elevate Hub Work"
-            class="hero-display-image"
-          /> -->
+          <picture class="hero-display-image">
+            <source media="(max-width: 768px)" srcset="./assets/images/hero-image-mobile.webp">
+            <source media="(min-width: 769px)" srcset="./assets/images/hero-image.webp">
+            <img src="./assets/images/hero-image.webp" alt="A image with two mockups showing expertise in all kind of animtion video for your brand">
+          </picture>
+          
 
-          <canvas
+          <!-- <canvas
             id="canvas"
             width="500"
             height="500"
             aria-label="Graphic with moving shapes, refering to elevating of brands and action"
             aria-role="graphics"
-          ></canvas>
+          ></canvas> -->
           <!-- Rive -->
-          <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+          <!-- <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
           <script>
             const r = new rive.Rive({
               src: "./assets/animated_shapes_-_loops.riv",
@@ -90,7 +91,7 @@
                 r.resizeDrawingSurfaceToCanvas();
               },
             });
-          </script>
+          </script> -->
         </div>
       </section>
 
@@ -299,14 +300,17 @@
             alt="Rocket Icon"
           />
         </div>
-        <h2>Elevate Your Brand <br />with Unbeatable Value</h2>
-        <p>
-          Join a global clientele leveraging ElevateHubMedia's animated
-          explainer videos for impactful messaging and boosted conversions. We
-          offer high-quality custom videos at competitive rates, ensuring great
-          value for your investment.
-        </p>
-        <div class="eye-container">
+        <div class="value-heading">
+
+          <h2>Elevate Your Brand <br />with Unbeatable Value</h2>
+          <p>
+            Join a global clientele leveraging ElevateHubMedia's animated
+            explainer videos for impactful messaging and boosted conversions. We
+            offer high-quality custom videos at competitive rates, ensuring great
+            value for your investment.
+          </p>
+        </div>
+        <!-- <div class="eye-container">
           <canvas
             id="canvas-eye"
             width="1000"
@@ -314,7 +318,7 @@
             aria-label="Eye graphic, tracking with the mouse cursor refering to elevating creativity and attentions"
             aria-role="graphics"
           ></canvas>
-          <!-- Rive -->
+          
           <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
           <script>
             const r1 = new rive.Rive({
@@ -328,7 +332,7 @@
               },
             });
           </script>
-        </div>
+        </div> -->
 
         <div class="value-grid">
           <div class="value-grid-item">

@@ -77,12 +77,12 @@ h5 {
 // Mixins 
 
 // Mixin for creating a flex container
-@mixin flex-container($direction: row, $justify: flex-start, $align: start) {
+@mixin flex-container($direction: row, $justify: flex-start, $align: start, $flex-wrap: wrap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
-    flex-wrap: wrap;
+    flex-wrap: $flex-wrap;
 }
 
 @mixin para-width {
@@ -252,7 +252,9 @@ section {
 
 #hero {
     min-height: 90vh;
-    @include flex-container(row, space-between, center);
+    @include flex-container(row, space-between, center, nowrap);
+    gap: 4rem;
+    
 
 
     h1 {
@@ -295,24 +297,24 @@ section {
             transition: all 300ms ease-in-out;
 
 
-            &::after {
-                content: url('../assets/icons/underline.png');
-                position: absolute;
-                z-index: -9;
-                left: 4rem;
-                max-width: 100px;
-                bottom: 0.5rem;
-                width: 100%;
-                opacity: 0.4;
-                transition: all 300ms ease-in-out;
-            }
+            // &::after {
+            //     content: url('../assets/icons/underline.png');
+            //     position: absolute;
+            //     z-index: -9;
+            //     left: 4rem;
+            //     max-width: 100px;
+            //     bottom: 0.5rem;
+            //     width: 100%;
+            //     opacity: 0.4;
+            //     transition: all 300ms ease-in-out;
+            // }
 
-            &:hover {
-                &::after {
-                    bottom: 0;
-                    opacity: 0.9;
-                }
-            }
+            // &:hover {
+            //     &::after {
+            //         bottom: 0;
+            //         opacity: 0.9;
+            //     }
+            // }
         }
     }
 }
@@ -561,6 +563,11 @@ section {
 
     @include para-width;
     position: relative;
+
+    .value-heading{
+        position: sticky;
+        top: 90px;
+    }
 
     h2 {
         font-size: $fs-h2;

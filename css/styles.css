@@ -318,7 +318,8 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  gap: 4rem;
 }
 #hero h1 {
   font-size: 5.4rem;
@@ -356,21 +357,6 @@ section {
   position: relative;
   z-index: 99;
   transition: all 300ms ease-in-out;
-}
-#hero .hero-button-group .btn-link::after {
-  content: url("../assets/icons/underline.png");
-  position: absolute;
-  z-index: -9;
-  left: 4rem;
-  max-width: 100px;
-  bottom: 0.5rem;
-  width: 100%;
-  opacity: 0.4;
-  transition: all 300ms ease-in-out;
-}
-#hero .hero-button-group .btn-link:hover::after {
-  bottom: 0;
-  opacity: 0.9;
 }
 
 #problem-statement {
@@ -579,6 +565,10 @@ section {
   #value-proposition p {
     max-width: 40vw;
   }
+}
+#value-proposition .value-heading {
+  position: sticky;
+  top: 90px;
 }
 #value-proposition h2 {
   font-size: 3.6rem;
