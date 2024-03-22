@@ -24,7 +24,6 @@ var options = {
   smartBackspace: false,
   loop: true,
   preStringTyped: (arrayPos, self) => changeColor(),
-  onLastStringBackspaced: (self) => changeColor(),
   // onLastStringBackspaced: (self) => changeColor(),
 };
 
