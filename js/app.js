@@ -33,3 +33,21 @@ try {
 } catch (e) {
   console.log("initialization error");
 }
+
+
+//video
+
+function loadAndPlayVideo() {
+  var video = document.getElementById('video');
+  var thumbnail = document.getElementById('video-thumbnail');
+
+  // Set the video source
+  video.src = '../assets/video/elevate-video.mp4'; // Update this with your video file path
+
+  // Show the video and hide the thumbnail
+  video.style.display = 'block';
+  thumbnail.style.display = 'none';
+
+  // Play the video
+  video.play();
+}

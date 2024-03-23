@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <title>Elevate Hub Studio</title>
 
-    <!-- <script src="./js/utils/styled.js" defer></script>
+    <!-- <script src="./js/utils/styled.js" defer></script> -->
     <script src="./js/vendor/typed.js" defer></script>
-    <script src="./js/app.js" defer></script> -->
+    <script src="./js/app.js" defer></script>
   </head>
   <body>
     <header class="header-container">
@@ -43,9 +43,6 @@
       <div role="button" id="hamburger">Hamburger</div>
     </header>
 
-
-    
-
     <main>
       <section id="hero">
         <div class="hero-text">
@@ -68,32 +65,19 @@
 
         <div class="hero-display">
           <picture class="hero-display-image">
-            <source media="(max-width: 768px)" srcset="./assets/images/hero-image-mobile.webp">
-            <source media="(min-width: 769px)" srcset="./assets/images/hero-test.png">
-            <img src="./assets/images/hero-image.webp" alt="A image with two mockups showing expertise in all kind of animtion video for your brand">
+            <source
+              media="(max-width: 768px)"
+              srcset="./assets/images/hero-image.webp"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="./assets/images/hero-image.webp"
+            />
+            <img
+              src="./assets/images/hero-image.webp"
+              alt="A image with two mockups showing expertise in all kind of animtion video for your brand"
+            />
           </picture>
-          
-
-          <!-- <canvas
-            id="canvas"
-            width="500"
-            height="500"
-            aria-label="Graphic with moving shapes, refering to elevating of brands and action"
-            aria-role="graphics"
-          ></canvas> -->
-          <!-- Rive -->
-          <!-- <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
-          <script>
-            const r = new rive.Rive({
-              src: "./assets/animated_shapes_-_loops.riv",
-              canvas: document.getElementById("canvas"),
-              autoplay: true,
-              stateMachines: "shapes_001",
-              onLoad: () => {
-                r.resizeDrawingSurfaceToCanvas();
-              },
-            });
-          </script> -->
         </div>
       </section>
 
@@ -141,8 +125,10 @@
           />
         </div>
         <h2>
-          <span> We Deliver Masterpieces </span> <br>
-          <span class="typing"><span class="typing-span"> that captivate</span> </span>
+          <span> We Deliver Masterpieces </span> <br />
+          <span class="typing"
+            ><span class="typing-span"> that captivate</span>
+          </span>
         </h2>
         <div class="solution-container">
           <div class="solution-grid">
@@ -209,37 +195,16 @@
         </div>
         <h2>Expect the Exceptional, <br />Sample Our Craft</h2>
 
-        <div class="portfolio-grid">
-          <div class="p-grid-item">
-            <div class="item-video"></div>
-            <h3></h3>
-            <p></p>
-          </div>
-          <div class="p-grid-item">
-            <div class="item-video"></div>
-            <h3></h3>
-            <p></p>
-          </div>
-          <div class="p-grid-item">
-            <div class="item-video"></div>
-            <h3></h3>
-            <p></p>
-          </div>
-          <div class="p-grid-item">
-            <div class="item-video"></div>
-            <h3></h3>
-            <p></p>
-          </div>
-          <div class="p-grid-item">
-            <div class="item-video"></div>
-            <h3></h3>
-            <p></p>
-          </div>
-          <div class="p-grid-item">
-            <div class="item-video"></div>
-            <h3></h3>
-            <p></p>
-          </div>
+        <div class="portfolio-video">
+          <img
+            id="video-thumbnail"
+            src="./assets/images/thumbnail-elevate-video.png"
+            alt="Video Thumbnail"
+            onclick="loadAndPlayVideo()"
+          />
+          <video id="video" controls loop>
+            <!-- The source is set programmatically -->
+          </video>
         </div>
       </section>
 
@@ -303,13 +268,12 @@
           />
         </div>
         <div class="value-heading">
-
           <h2>Elevate Your Brand <br />with Unbeatable Value</h2>
           <p>
             Join a global clientele leveraging ElevateHubMedia's animated
             explainer videos for impactful messaging and boosted conversions. We
-            offer high-quality custom videos at competitive rates, ensuring great
-            value for your investment.
+            offer high-quality custom videos at competitive rates, ensuring
+            great value for your investment.
           </p>
         </div>
         <!-- <div class="eye-container">
@@ -408,13 +372,22 @@
             <div>
               <h3>Whiteboard</h3>
               <div class="package-video">
-                <img
+                <!-- <img
                   src="./assets/images/whiteboard.webp"
                   alt="Whiteboard Video Thumbnail Image"
-                />
-                <div class="play-btn">
+                /> -->
+                <iframe
+                  loading="lazy"
+                  title="SocialMe - Whiteboard"
+                  src="https://player.vimeo.com/video/779846542?h=c14561dd84&amp;dnt=1&amp;app_id=122963"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  name="fitvid7"
+                ></iframe>
+
+                <!-- <div class="play-btn">
                   <img src="./assets/icons/play.svg" alt="Play Icon" />
-                </div>
+                </div> -->
               </div>
               <menu>
                 <li>High Converting Script</li>
@@ -436,13 +409,22 @@
             <div>
               <h3>Explainer</h3>
               <div class="package-video">
-                <img
+                <iframe
+                  loading="lazy"
+                  title="SocialMe - Whiteboard"
+                  src="https://player.vimeo.com/video/779837404?h=ee50de10d0&amp;dnt=1&amp;app_id=122963"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  name="fitvid7"
+                ></iframe>
+
+                <!-- <img
                   src="./assets/images/explainer.webp"
                   alt="Explainer Video Thumbnail Image"
                 />
                 <div class="play-btn">
                   <img src="./assets/icons/play.svg" alt="Play Icon" />
-                </div>
+                </div> -->
               </div>
               <menu>
                 <li>High Converting Script</li>
@@ -464,13 +446,22 @@
             <div>
               <h3 class="premium">Premium</h3>
               <div class="package-video">
-                <img
+                <iframe
+                  loading="lazy"
+                  title="SocialMe - Whiteboard"
+                  src="https://player.vimeo.com/video/779830854?h=5399429893&amp;dnt=1&amp;app_id=122963"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  name="fitvid7"
+                ></iframe>
+
+                <!-- <img
                   src="./assets/images/premium.webp"
                   alt="Premium Video Thumbnail Image"
                 />
                 <div class="play-btn">
                   <img src="./assets/icons/play.svg" alt="Play Icon" />
-                </div>
+                </div> -->
               </div>
               <menu>
                 <li>High Converting Script</li>
