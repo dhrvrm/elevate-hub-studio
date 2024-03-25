@@ -9,7 +9,7 @@
 
 /* Constants */
 
-$clr-primary-400: #1D267D;
+$clr-primary-400: #5C469C;
 $clr-primary-500: #0C134F;
 $clr-primary-800: #07000c;
 $clr-primary-900: #020004;
@@ -159,6 +159,10 @@ a {
 }
 
 //Text Effects
+.text-w-color{
+    color: $clr-primary-400;
+}
+
 .premium {
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
     background-size: 150%;
@@ -490,7 +494,6 @@ section {
         width: 100%;
         height: 100%;
         border-radius: 2rem;
-
         cursor: pointer;
         position: absolute;
         top: 0;
@@ -811,6 +814,8 @@ section {
     }
 }
 
+
+
 footer {
     padding: 16rem $whitespace-sides 2rem;
     background-color: #faf6ff;
@@ -870,4 +875,25 @@ footer {
             padding-left: 0;
         }
     }
+}
+
+
+#about-hero {
+    min-height: 100vh;
+    @include flex-container(row, space-between, center, nowrap);
+    gap: 4rem;
+   
+
+    h1 {
+        font-size: 5.4rem;
+        font-weight: 700;
+        margin-bottom: 0.4em;
+    }
+
+    p{
+        font-size: 2rem;
+        margin-top: 0.8em;
+        max-width: 60rem;
+    }
+
 }

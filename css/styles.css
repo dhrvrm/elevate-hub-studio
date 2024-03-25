@@ -193,7 +193,7 @@ h5 {
 }
 
 .btn-primary {
-  background-color: #1D267D;
+  background-color: #5C469C;
   color: #fcfcfc;
 }
 .btn-primary:hover {
@@ -222,7 +222,11 @@ a {
   transition: all 300ms ease-in-out;
 }
 a:hover {
-  color: #1D267D;
+  color: #5C469C;
+}
+
+.text-w-color {
+  color: #5C469C;
 }
 
 .premium {
@@ -339,7 +343,7 @@ section {
 }
 #hero #elevate-text {
   position: relative;
-  color: #1D267D;
+  color: #5C469C;
   font-weight: 900;
 }
 #hero #elevate-text span {
@@ -818,4 +822,24 @@ footer .w-icon-links img {
 }
 footer .w-icon-links h4 {
   padding-left: 0;
+}
+
+#about-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 4rem;
+}
+#about-hero h1 {
+  font-size: 5.4rem;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+}
+#about-hero p {
+  font-size: 2rem;
+  margin-top: 0.8em;
+  max-width: 60rem;
 }/*# sourceMappingURL=styles.css.map */
