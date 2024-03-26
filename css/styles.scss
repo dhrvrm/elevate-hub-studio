@@ -369,6 +369,8 @@ a {
     }
 
     @media (max-width: $medium-breakpoint) {
+    @include flex-container(row, center, center, nowrap);
+
         flex-direction: column-reverse;
         padding: 6rem 2rem;
 
@@ -494,7 +496,7 @@ a {
         }
 
         .our-reply {
-            margin-left: 2rem;
+            margin-left: 0px;
         }
 
     }
@@ -562,13 +564,13 @@ a {
 
     @media (max-width: $medium-breakpoint) {
         flex-direction: column;
-        padding: 6rem 2rem;
+        padding: 4rem 2rem;
 
         h2 {
             font-size: 2.8rem;
 
             .typing {
-                font-size: 3.2rem;
+                font-size: 3.6rem;
             }
         }
 
@@ -640,7 +642,7 @@ a {
 
     @media (max-width: $medium-breakpoint) {
         flex-direction: column;
-        padding: 12rem 2rem;
+        padding: 8rem 2rem;
 
         h2 {
             font-size: 2.8rem;
@@ -736,7 +738,7 @@ a {
 
     @media (max-width: $medium-breakpoint) {
         flex-direction: column;
-        padding: 12rem 2rem;
+        padding: 8rem 2rem;
 
         h2 {
             font-size: 2.8rem;
@@ -745,7 +747,7 @@ a {
         .steps-container {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 4rem;
+            gap: 6rem;
             margin-top: 6rem;
             position: relative;
             z-index: 9;
