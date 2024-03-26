@@ -49,7 +49,7 @@
         </div>
         <div class="join-form">
             <h2>Enquiry</h2>
-            <form id="contact-form">
+            <form id="contact-form" action="https://formsubmit.co/vdhruvyt@gmail.com" method="POST">
                 <div class="input-group">
                     <label for="name">Your Name *</label>
                     <input type="text" name="name" id="name" required>
@@ -62,8 +62,12 @@
                     <label for="name">Tell us more (Your Message) </label>
                     <textarea rows="5" name="message" id="message"></textarea>
                 </div>
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
 
-                <a class="btn btn-primary btn-form" href="./pages/contact.html">Get in Touch</a>
+
+
+                <!-- <a class="btn btn-primary btn-form" href="./pages/contact.html">Get in Touch</a> -->
+                <input type="submit" class="btn btn-primary btn-form" value="Get in Touch"/>
             </form>
         </div>
         </div>

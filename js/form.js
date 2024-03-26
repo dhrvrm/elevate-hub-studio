@@ -28,5 +28,9 @@ const formSubmit = async (event) =>{
    } 
 }
 
-formButton.addEventListener('click',formSubmit);
+const formSubmitCB = (event) =>{
+    form.submit();
+ }
+
+// formButton.addEventListener('click',formSubmitCB);
 
