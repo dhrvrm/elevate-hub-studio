@@ -238,7 +238,7 @@ a {
     z-index: 99999;
 }
 
-.hamburger.cross span{
+.hamburger.cross span {
     background: $clr-accent-200;
 
 }
@@ -309,11 +309,12 @@ a {
             height: 100vh;
             width: 50vw;
             gap: 4rem;
-            transition: transform .6s cubic-bezier(.03,.94,.24,.98);
+            transition: transform .6s cubic-bezier(.03, .94, .24, .98);
 
-            &.inview{
+            &.inview {
                 transform: translateX(0%);
             }
+
             .nav-link a {
                 color: $clr-accent-200;
 
@@ -369,7 +370,7 @@ a {
     }
 
     @media (max-width: $medium-breakpoint) {
-    @include flex-container(row, center, center, nowrap);
+        @include flex-container(row, center, center, nowrap);
 
         flex-direction: column-reverse;
         padding: 6rem 2rem;
@@ -1025,26 +1026,32 @@ a {
     }
 }
 
-#calendly {
+#join-us {
 
-    display: grid;
-    grid-template-columns: 1fr;
+    @include flex-container(row, space-between, flex-start, wrap);
     margin-bottom: -16rem;
 
     h2 {
         font-size: $fs-h2;
         font-weight: 700;
         margin-bottom: 0.4em;
-
-        span {
-            display: block;
-            font-size: 3.2rem;
-            font-weight: 300;
-        }
     }
 
-    .calendly-widget {
-        margin-left: 30rem;
+    @include para-width;
+
+
+    .join-button-group {
+        @include flex-container(row, flex-start, flex-start, wrap);
+        margin-top: 6rem;
+    }
+
+
+    @media (max-width: $medium-breakpoint) {
+        padding: 6rem 2rem;
+
+        h2 {
+            font-size: 2.8rem;
+        }
     }
 }
 
@@ -1120,6 +1127,30 @@ footer {
 }
 
 
+
+#calendly {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: -16rem;
+
+    h2 {
+        font-size: $fs-h2;
+        font-weight: 700;
+        margin-bottom: 0.4em;
+
+        span {
+            display: block;
+            font-size: 3.2rem;
+            font-weight: 300;
+        }
+    }
+
+    .calendly-widget {
+        margin-left: 30rem;
+    }
+}
+
 #about-hero {
     min-height: 100vh;
     @include flex-container(row, space-between, center, nowrap);
@@ -1157,5 +1188,72 @@ footer {
         margin-top: 0.8em;
     }
 
+
+}
+
+#join-hero {
+    @include flex-container(row, flex-start, flex-start);
+    gap: 16rem;
+
+    h1 {
+        font-size: 5.4rem;
+        font-weight: 700;
+        margin-top: 10rem;
+        margin-bottom: 0.6em;
+    }
+
+    h2 {
+        font-size: $fs-h2;
+        font-weight: 700;
+        margin-bottom: 0.6em;
+    }
+
+    @include para-width;
+
+    p {
+        font-size: 2rem;
+        margin-top: 0.8em;
+    }
+
+    .join-form {
+        margin-top: 4rem;
+        padding: 6rem;
+        background-color: $clr-accent-400;
+        border-radius: 2rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+        .btn-form{
+            display: block;
+            width: max-content;
+            margin-top: 4rem;
+        }
+        .input-group {
+            @include flex-container(column, flex-start, flex-start);
+            gap: 0.4rem;
+            margin-bottom: 2.4rem;
+
+            label{
+                opacity: 0.9;
+                font-size: 1.4rem;
+            }
+            input, textarea{
+                font-family: inherit;
+                font-size: 1.8rem;
+                font-weight: 600;
+                padding: 1.4rem 1.8rem;
+                outline: none;
+                border: none;
+                border-bottom: 4px solid $clr-primary-500;
+                box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            }
+            textarea{
+                width: 100%;
+            }
+            
+        }
+
+        
+    }
+    
 
 }

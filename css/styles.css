@@ -977,23 +977,39 @@ a:hover {
   }
 }
 
-#calendly {
-  display: grid;
-  grid-template-columns: 1fr;
+#join-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin-bottom: -16rem;
 }
-#calendly h2 {
+#join-us h2 {
   font-size: 3.6rem;
   font-weight: 700;
   margin-bottom: 0.4em;
 }
-#calendly h2 span {
-  display: block;
-  font-size: 3.2rem;
-  font-weight: 300;
+@media screen and (min-width: 760px) {
+  #join-us p {
+    max-width: 40vw;
+  }
 }
-#calendly .calendly-widget {
-  margin-left: 30rem;
+#join-us .join-button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+@media (max-width: 760px) {
+  #join-us {
+    padding: 6rem 2rem;
+  }
+  #join-us h2 {
+    font-size: 2.8rem;
+  }
 }
 
 footer {
@@ -1059,6 +1075,25 @@ footer .w-icon-links h4 {
   }
 }
 
+#calendly {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: -16rem;
+}
+#calendly h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+}
+#calendly h2 span {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+#calendly .calendly-widget {
+  margin-left: 30rem;
+}
+
 #about-hero {
   min-height: 100vh;
   display: flex;
@@ -1103,4 +1138,72 @@ footer .w-icon-links h4 {
 #about-info p {
   font-size: 2rem;
   margin-top: 0.8em;
+}
+
+#join-hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16rem;
+}
+#join-hero h1 {
+  font-size: 5.4rem;
+  font-weight: 700;
+  margin-top: 10rem;
+  margin-bottom: 0.6em;
+}
+#join-hero h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 0.6em;
+}
+@media screen and (min-width: 760px) {
+  #join-hero p {
+    max-width: 40vw;
+  }
+}
+#join-hero p {
+  font-size: 2rem;
+  margin-top: 0.8em;
+}
+#join-hero .join-form {
+  margin-top: 4rem;
+  padding: 6rem;
+  background-color: #D4ADFC;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#join-hero .join-form .btn-form {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 4rem;
+}
+#join-hero .join-form .input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 2.4rem;
+}
+#join-hero .join-form .input-group label {
+  opacity: 0.9;
+  font-size: 1.4rem;
+}
+#join-hero .join-form .input-group input, #join-hero .join-form .input-group textarea {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.4rem 1.8rem;
+  outline: none;
+  border: none;
+  border-bottom: 4px solid #0C134F;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+#join-hero .join-form .input-group textarea {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

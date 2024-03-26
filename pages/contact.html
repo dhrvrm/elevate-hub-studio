@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+    <title>Elevate Hub Studio</title>
+
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo-container">
+        <div class="logo-container-img">
+          <img
+            src="../assets/images/elevate-logo.webp"
+            alt="Elevate Media Hub"
+          />
+        </div>  
+      </div>
+
+      <nav class="nav-container">
+        <menu class="nav-list">
+          <li class="nav-link"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-link"><a href="./pages/about.html">About Us</a></li>
+          <li class="nav-link">
+            <a
+              class="btn btn-primary btn-navigation"
+              href="./pages/contact.html"
+              >Get in Touch</a
+            >
+          </li>
+        </menu>
+      </nav>
+
+      <div role="button" id="hamburger">Hamburger</div>
+    </header>
+
+    <main>
+      <section id="join-hero">
+        <div class="join-hero-text">
+            <h1>Get in Touch</h1>
+            <p>
+                We're excited to hear from you! Whether you have <span class="text-w-color">a project in mind</span>, a question about <span class="text-w-color">our services</span>, or just want to chat about <span class="text-w-color">the possibilities of animation, we're here to help.</span> Use the form to drop us a line or reach out directly using the contact details provided. We promise to get back to you as soon as possible.
+            </p>
+            
+        </div>
+        <div class="join-form">
+            <h2>Enquiry</h2>
+            <form id="contact-form">
+                <div class="input-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="name">Tell us more (Your Message) </label>
+                    <textarea rows="5" name="message" id="message"></textarea>
+                </div>
+
+                <a class="btn btn-primary btn-form" href="./pages/contact.html">Get in Touch</a>
+            </form>
+        </div>
+        </div>
+      </section>
+
+
+      <section id="calendly">
+        <h2>
+          Book a Warm, <br />Informal Call with Us!
+        </h2>
+        <div class="calendly-widget">
+          <!-- Calendly inline widget begin -->
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/jordan-elevatehubmedia/meet?hide_gdpr_banner=1&background_color=fcfcfc&text_color=020004&primary_color=020004"
+            style="min-width: 320px; height: 700px"
+          ></div>
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+          ></script>
+          <!-- Calendly inline widget end -->
+        </div>
+      </section>
+
+      <!-- More sections as needed -->
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <menu>
+          <div class="logo-container">
+            <div class="logo-container-img">
+              <img
+                src="./assets/images/logo-full.webp"
+                alt="Elevate Media Hub"
+              />
+            </div>
+            <div class="tagline">
+              <h3>Animating Your Ambitions, Elevating Your Impact</h3>
+            </div>
+          </div>
+        </menu>
+
+        <nav>
+          <menu>
+            <h4>Links</h4>
+            <li><a href="#">Home</a></li>
+            <li><a href="#portflio">Porfolio</a></li>
+            <li><a href="#contact">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </menu>
+        </nav>
+
+        <menu>
+          <menu class="w-icon-links">
+            <h4>Get in Touch</h4>
+            <li>
+              <img src="/assets/icons/mail.svg" alt="email icon" />
+              <a href="mailto:jordanmiller@elevatehubmedia.com"
+                >jordanmiller@elevatehubmedia.com</a
+              >
+            </li>
+            <li>
+              <img src="/assets/icons/call.svg" alt="phone number icon" />
+              <a href="tel:+447738427093">+44 7738 427093</a>
+            </li>
+            <address>
+              <img src="/assets/icons/nav.svg" alt="navigation icon" />
+              <span>Wakefield, West Yorkshire, England</span>
+            </address>
+          </menu>
+        </menu>
+      </div>
+
+      <div class="muted-footer-container">
+        <p>&copy; Copyright 2024, Elevate Media Hub</p>
+        <a href="pages/privacy-policy.html">Privacy Policy</a>
+        <a href="pages/terms-conditions.html">Terms & Conditions</a>
+      </div>
+    </footer>
+
+    <script src="../js/form.js"></script>
+  </body>
+</html>
