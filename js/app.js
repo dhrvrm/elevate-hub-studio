@@ -51,3 +51,10 @@ function loadAndPlayVideo() {
   // Play the video
   video.play();
 }
+
+
+// Hamburger
+document.getElementById('hamburger').addEventListener('click', function() {
+  this.classList.toggle('cross');
+  document.querySelector('.nav-list').classList.toggle('inview');
+});
