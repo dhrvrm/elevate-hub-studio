@@ -1047,11 +1047,15 @@ a {
 
 
     @media (max-width: $medium-breakpoint) {
+        margin-bottom: 0px;
         padding: 6rem 2rem;
+        gap: 2rem;
 
         h2 {
             font-size: 2.8rem;
         }
+
+
     }
 }
 
@@ -1149,6 +1153,23 @@ footer {
     .calendly-widget {
         margin-left: 30rem;
     }
+
+    @media (max-width: $medium-breakpoint) {
+        gap: 2rem;
+        padding: 6rem 2rem;
+        margin-bottom: 0px;
+
+        h2 {
+            font-size: 2.8rem;
+        }
+
+        .calendly-widget {
+            margin-left: 0px;
+        }
+
+
+
+    }
 }
 
 #about-hero {
@@ -1170,6 +1191,23 @@ footer {
         margin-top: 0.8em;
     }
 
+    @media (max-width: $medium-breakpoint) {
+        @include flex-container(column-reverse, center, center, nowrap);
+
+
+        padding: 12rem 2rem 6rem;
+
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 4rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+    }
+
 }
 
 #about-info {
@@ -1188,7 +1226,19 @@ footer {
         margin-top: 0.8em;
     }
 
+    @media (max-width: $medium-breakpoint) {
+        @include flex-container(column-reverse, center, center, nowrap);
+        padding: 6rem 2rem;
 
+
+        h2 {
+            font-size: 2.8rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+    }
 }
 
 #join-hero {
@@ -1222,21 +1272,24 @@ footer {
         border-radius: 2rem;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
-        .btn-form{
+        .btn-form {
             display: block;
             width: max-content;
             margin-top: 4rem;
         }
+
         .input-group {
             @include flex-container(column, flex-start, flex-start);
             gap: 0.4rem;
             margin-bottom: 2.4rem;
 
-            label{
+            label {
                 opacity: 0.9;
                 font-size: 1.4rem;
             }
-            input, textarea{
+
+            input,
+            textarea {
                 font-family: inherit;
                 font-size: 1.8rem;
                 font-weight: 600;
@@ -1246,14 +1299,144 @@ footer {
                 border-bottom: 4px solid $clr-primary-500;
                 box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
             }
-            textarea{
+
+            textarea {
                 width: 100%;
             }
-            
+
         }
 
-        
-    }
-    
 
+    }
+
+    @media (max-width: $medium-breakpoint) {
+        padding: 12rem 2rem 6rem;
+        gap: 4rem;
+
+        h1 {
+            font-size: 3.2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .join-form {
+            margin: 0px;
+            padding: 2rem;
+            width: 100%;
+
+
+            input,
+            textarea {
+                width: 100%
+            }
+
+        }
+    }
+
+
+}
+
+#porfolio-hero {
+    @include flex-container(row, flex-start, flex-start);
+    gap: 18rem;
+
+    h1 {
+        font-size: 5.4rem;
+        font-weight: 700;
+        margin-top: 10rem;
+        margin-bottom: 0.6em;
+    }
+
+    @include para-width;
+
+    p {
+        font-size: 2rem;
+        margin-top: 0.8em;
+    }
+
+    .porfolio-hero-image img {
+        height: 40rem;
+    }
+
+    @media (max-width: $medium-breakpoint) {
+        @include flex-container(column-reverse, center, center, nowrap);
+        gap: 4rem;
+
+
+        padding: 12rem 2rem 6rem;
+
+        h1 {
+            font-size: 3.2rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        .porfolio-hero-image img {
+            height: 20rem;
+        }
+
+    }
+
+}
+
+#porfolio-types {
+
+
+    @include para-width;
+
+
+    .porfolio-container {
+        h2 {
+            font-size: $fs-h2;
+            font-weight: 700;
+            margin-bottom: 0.6em;
+        }
+
+        p {
+            font-size: 2rem;
+            margin-top: 0.8em;
+        }
+
+    }
+
+    .porfolio-grid {
+        @include flex-container(row, flex-start, flex-start, wrap);
+        gap: 2rem;
+        margin-block: 4rem 12rem;
+
+        .porfolio-item {
+            width: clamp(30rem, 35rem, 40rem);
+        }
+
+        h3 {
+            font-size: $fs-h3;
+            font-weight: 500;
+            margin-left: 2rem;
+            margin-top: 2rem;
+            border-bottom: 10px solid rgba(184, 184, 184, 0.096);
+            width: max-content;
+        }
+    }
+
+    @media (max-width: $medium-breakpoint) {
+        padding: 6rem 2rem;
+
+        .porfolio-container {
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .porfolio-container:last-child .porfolio-grid:last-child {
+            margin-bottom: 0px;
+        }
+    }
 }
